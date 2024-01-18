@@ -127,6 +127,12 @@ The askRange function is the "main" function that will begin our game, so you'll
 
 Before moving onto the bonus ask a TA for a code review.
 
+
+
+
+
+
+
 Bonus: Limiting the number of turns
 With our main features complete, let's work on increasing the difficulty of the game by limiting the number of guesses a user can make. If the player uses all of their attempts without guessing the correct number, they will lose the game.
 
@@ -136,11 +142,3 @@ Start by limiting the player to 5 attempts. You can accomplish this by initializ
 Limiting turns dynamically
 Make the limit dynamic by allowing the user to specify the number of attempts. We recommend creating an askLimit function that behaves similarly to askRange. Be sure to chain the callbacks in the right order to ensure the game is configured properly. For example, one valid callback chain order would be askLimit -> askRange -> askGuess. If you follow this order, you'll need to call askLimit in the global scope to begin the game.
 
-Did you find this lesson helpful?
-
-No
-
-Yes
-✔︎ Submit Project
-No file chosen
-Archive your file into a .zip folder and click Submit Project to upload.
