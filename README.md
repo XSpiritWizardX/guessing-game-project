@@ -69,16 +69,7 @@ You may find it a bit startling that you can reference the askGuess function fro
 
 Run your program and test it out, being sure that you have a single call to askGuess in the global scope so the game can begin. Woohoo! We now have our minimal viable product (MVP) version of the game.
 
-Before moving onto the next phase, ask a TA for a code review.
 
-Did you find this lesson helpful?
-
-No
-
-Yes
-✔︎ Submit Project
-No file chosen
-Archive your file into a .zip folder and click Submit Project to upload.
 
 
 
@@ -141,4 +132,3 @@ Start by limiting the player to 5 attempts. You can accomplish this by initializ
 
 Limiting turns dynamically
 Make the limit dynamic by allowing the user to specify the number of attempts. We recommend creating an askLimit function that behaves similarly to askRange. Be sure to chain the callbacks in the right order to ensure the game is configured properly. For example, one valid callback chain order would be askLimit -> askRange -> askGuess. If you follow this order, you'll need to call askLimit in the global scope to begin the game.
-

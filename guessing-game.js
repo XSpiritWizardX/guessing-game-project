@@ -46,13 +46,18 @@ const checkGuess = (num, secretNum) => {
                         console.log("Hacker Workspace Initialized::")
                         rl.question("Please Specify Target::", (target) => {
                             console.log(`Cyber Attack Unit Sent To ${target}`)
+                            console.log(`${target}'s defenses have been DESTOYED!:::`)
                             console.log("This Program Will Now Self Destruct!:::")
                             rl.close();
                         })
                     }
                     else{
                         console.log("Converting your data!")
-                        rl.close();
+                        const firewall = () => {
+                            console.log("Finished!::");
+                            rl.close();
+                        }
+                        setTimeout(firewall,5000)
                     }
                 })
             }
