@@ -1,5 +1,4 @@
-const superSecretNumber = 3301;
-
+// const superSecretNumber = 3301;   // cicada ss
 const readline = require('readline');
 const rl = readline.createInterface({
     input: process.stdin,
@@ -32,41 +31,41 @@ const askLimit = () => {
 askLimit();
 
 const checkGuess = (num, secretNum) => {
-    if(num === superSecretNumber){
-        console.log("Super Secret Identification Required::")
-        rl.question("Login???", (answer) => {
-            if(answer === "PAX") {
-                console.log("Login Confirmed:")
-                rl.question("Password???", (answer2) => {
-                    if(answer2 === "Bandersnatch"){
-                        console.log("Login Sucessful!")
-                        console.log("Welcome!")
-                        console.log("Input Recieved Anonymous::")
-                        console.log("Connecting To Onions And Radishes::")
-                        console.log("Hacker Workspace Initialized::")
-                        rl.question("Please Specify Target::", (target) => {
-                            console.log(`Cyber Attack Unit Sent To ${target}`)
-                            console.log(`${target}'s defenses have been DESTOYED!:::`)
-                            console.log("This Program Will Now Self Destruct!:::")
-                            rl.close();
-                        })
-                    }
-                    else{
-                        console.log("Converting your data!")
-                        const firewall = () => {
-                            console.log("Finished!::");
-                            rl.close();
-                        }
-                        setTimeout(firewall,5000)
-                    }
-                })
-            }
-            else {
-                console.log("We know who you are!");
-                rl.close();
-            }
-        })
-    }
+    // if(num === superSecretNumber){
+    //     console.log("Super Secret Identification Required::")
+    //     rl.question("Login???", (answer) => {
+    //         if(answer === "PAX") {
+    //             console.log("Login Confirmed:")
+    //             rl.question("Password???", (answer2) => {
+    //                 if(answer2 === "Bandersnatch"){
+    //                     console.log("Login Sucessful!")
+    //                     console.log("Welcome!")
+    //                     console.log("Input Recieved Anonymous::")
+    //                     console.log("Connecting To Onions And Radishes::")
+    //                     console.log("Hacker Workspace Initialized::")
+    //                     rl.question("Please Specify Target::", (target) => {
+    //                         console.log(`Cyber Attack Unit Sent To ${target}`)
+    //                         console.log(`${target}'s defenses have been DESTOYED!:::`)
+    //                         console.log("This Program Will Now Self Destruct!:::")
+    //                         rl.close();
+    //                     })
+    //                 }
+    //                 else{
+    //                     console.log("Converting your data!")
+    //                     const firewall = () => {
+    //                         console.log("Finished!::");
+    //                         rl.close();
+    //                     }
+    //                     setTimeout(firewall,5000)
+    //                 }
+    //             })
+    //         }
+    //         else {
+    //             console.log("We know who you are!");
+    //             rl.close();
+    //         }
+    //     })
+    // }
 
 
     if(Number(num) > secretNum){
@@ -97,6 +96,7 @@ const askGuess = (secretNum) => {
 
             if(numAttempts === 0) {
                 console.log("Sorry you lose!")
+                console.log(`The winning number was ${secretNum}:::`)
                 return rl.close()
             }
             askGuess(secretNum);
